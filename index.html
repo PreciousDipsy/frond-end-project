@@ -15,11 +15,7 @@
 
     <div class="all-tasks">
         <h2 class="task-list-title">My lists</h2>
-        <ul class="task-list" data-lists>
-            <li class="list-name active-list">Front-End</li>
-            <li class="list-name">Lightroom</li>
-            <li class="list-name">Work</li> 
-        </ul>
+        <ul class="task-list" data-lists></ul>
 
         <form action="" data-new-list-form>
             <input type="test" class="new list" data-new-list-input placeholder="new list name" aria-label="new list name"/>
@@ -33,43 +29,30 @@
    </div>
    
    <div class="todo-body">
-       <div class="tasks">
-       <!--task-1-->
-       <div class="task"><input type="checkbox" id="task-1">
-        record to-do list video
-        <label for="task-1"></label>
-        <span class="custom-checkbox"></span>
-    </div>
-   </div>
-    <!--task-2--> 
-       <div class="tasks">
-       <div class="task"><input type="checkbox" id="task-2">
-        another task
-        <label for="task-2"></label>
-        <span class="custom-checkbox"></span>
-       </div>
-       <!--task-3-->  
-       <div class="tasks"></div>
-       <div class="task"><input type="checkbox" id="task-3">
-        another task
-        <label for="task-3"></label>
-        <span class="custom-checkbox"></span>
-       </div>
+       <div class="tasks" data-tasks></div>
      <!--new-task-creator-->
-   <div class="new-task-creator">
-    <form action="">
-        <input type="text" class="new task" placeholder="new task name" aria-label="new task name"/>
+     <div class="new-task-creator">
+      <form action="" data-new-task-form>
+        <input type="text" data-new-task-input class="new task" placeholder="new task name" aria-label="new task name"/>
         <button class="btn create" aria-label="create task name">+</button>
+
     </form>
    </div> 
    <!--delete-button-->
-   <div class="delete">
-       <button class="delete button">Clear completed tasks</button>
-       <button class="delete button">Delete list</button>
-
+     <div class="delete">
+     <button class="delete button" data-clear-complete-tasks-button>Clear completed tasks</button>
+     <button class="delete button" data-delete-list-button>Delete list</button>
    </div>
-
-
    </div>
+   </div>
+   <template id="task-template">
+    <div class="task">
+        <input type="checkbox">
+     <label>
+     <span class = "custom-checkbox"></span> 
+    </div>
+    </label>
+    </div>
+   </template>
 </body>
 </html>
