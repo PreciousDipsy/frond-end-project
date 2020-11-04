@@ -4,7 +4,7 @@ body{
   font-weight: 300;
   font-size: 1.5rem;
   background-color: #1F2833;
-  color: #D1E8E2;;
+  color: #45A29E;
 
   display: grid;
   grid: 
@@ -17,7 +17,7 @@ body{
   text-align: center;
   font-size: calc(7vw + 2rem);
   font-weight: 900;
-  color: #45A29E
+  color: #D1E8E2;
   
 }
 .all-tasks{
