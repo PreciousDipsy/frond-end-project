@@ -3,8 +3,8 @@ body{
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  background-color: #D1E8E2;
-  color: #116466;;
+  background-color: #1F2833;
+  color: #D1E8E2;;
 
   display: grid;
   grid: 
@@ -17,8 +17,7 @@ body{
   text-align: center;
   font-size: calc(7vw + 2rem);
   font-weight: 900;
-  color: rgba(0, 0, 0, 0.1);
- 
+  color: #45A29E
   
 }
 .all-tasks{
